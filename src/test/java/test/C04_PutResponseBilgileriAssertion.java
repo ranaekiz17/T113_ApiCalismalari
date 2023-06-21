@@ -58,7 +58,7 @@ public class C04_PutResponseBilgileriAssertion {
 
         Response response = given()
                                   .contentType(ContentType.JSON)
-                                  .when()
+                            .when()
                                   .body(reqBody.toString())
                                   .put(url);
 
@@ -66,6 +66,15 @@ public class C04_PutResponseBilgileriAssertion {
 
 
          response.prettyPrint();
+
+         // 4- Assertion
+
+        response.then()
+                .assertThat()
+                .statusCode(200)
+                .contentType("application/json; charset=utf-8")
+                .header("Server","cloudflare")
+                .statusLine("HTTP/1.1 200 OK");
 
     }
 
