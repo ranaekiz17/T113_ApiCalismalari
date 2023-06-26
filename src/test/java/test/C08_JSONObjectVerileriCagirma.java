@@ -96,18 +96,23 @@ public class C08_JSONObjectVerileriCagirma {
         System.out.println("Sokak adi : " + kisiBilgisi.getJSONObject("address").get("streetAddress"));
         System.out.println("Sehir : " + kisiBilgisi.getJSONObject("address").get("city"));
         System.out.println("Posta kodu : " + kisiBilgisi.getJSONObject("address").get("postalCode"));
+
+
         System.out.println("Tel no : " + kisiBilgisi
                             .getJSONArray("phoneNumbers")
                             .getJSONObject(0)
                             .get("number"));
         System.out.println("Tel turu : " + kisiBilgisi
+
                             .getJSONArray("phoneNumbers")
                             .getJSONObject(0)
                             .get("type"));
+
         System.out.println("Tel no : " + kisiBilgisi
                             .getJSONArray("phoneNumbers")
                             .getJSONObject(1)
                             .get("number"));
+
         System.out.println("Tel turu : " + kisiBilgisi
                             .getJSONArray("phoneNumbers")
                             .getJSONObject(1)
