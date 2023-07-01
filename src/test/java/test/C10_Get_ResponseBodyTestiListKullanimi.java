@@ -41,7 +41,7 @@ public class C10_Get_ResponseBodyTestiListKullanimi {
 
         response.prettyPrint();
 
-        //4- Assertion
+        //4- Assertion                           // Test gerceklestirilen adim
 
         response
                 .then()
@@ -51,6 +51,9 @@ public class C10_Get_ResponseBodyTestiListKullanimi {
                 .body("data.id", hasSize(24),
                         "data.employee_name", hasItem("Ashton Cox"),
                         "data.employee_age", hasItems(61,30,40));
+
+
+                 // birden fazla Item var ise hasItems, bir Item varsa hasItem kullanilir.(boolen dondurur)
 
 
 

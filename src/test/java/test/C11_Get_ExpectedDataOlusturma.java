@@ -58,5 +58,7 @@ public class C11_Get_ExpectedDataOlusturma {
         assertEquals(expData.get("id"), respJP.get("id"));
         assertEquals(expData.get("title"), respJP.get("title"));
         assertEquals(expData.get("body"), respJP.get("body"));
+
+
     }
 }
