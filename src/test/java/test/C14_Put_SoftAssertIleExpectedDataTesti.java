@@ -4,7 +4,8 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONObject;
-import org.junit.Test;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import static io.restassured.RestAssured.given;
 
@@ -131,12 +132,5 @@ public class C14_Put_SoftAssertIleExpectedDataTesti {
         softAssert.assertAll();
     }
 
-
-
-
-
-
-
-
-    }
 }
+

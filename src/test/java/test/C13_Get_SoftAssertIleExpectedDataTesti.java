@@ -5,7 +5,6 @@ import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.junit.Test;
 import org.testng.asserts.SoftAssert;
-import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
 import static io.restassured.RestAssured.given;
